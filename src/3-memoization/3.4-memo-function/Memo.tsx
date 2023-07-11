@@ -21,12 +21,12 @@ export const Memo = () => {
       <h3 className="text-2xl font-semibold mb-4">Memo List</h3>
       <ul>
         {listItems.map((item) => (
-          // <ListItem key={item.id} id={item.id}>
+          <ListItem key={item.id} id={item.id}>
+            {item.name}
+          </ListItem>
+          // <MemoizedListItem key={item.id} id={item.id}>
           //   {item.name}
-          // </ListItem>
-          <MemoizedListItem key={item.id} id={item.id}>
-            <>{item.name}</>
-          </MemoizedListItem>
+          // </MemoizedListItem>
         ))}
       </ul>
       <div className="my-4">

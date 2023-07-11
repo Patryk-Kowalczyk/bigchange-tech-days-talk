@@ -7,7 +7,7 @@ export const Diffing = () => {
 
   return (
     <div>
-      <div>{isApple ? <Fruit>🍎</Fruit> : <Fruit>🤖</Fruit>}</div>
+      <div>{isApple ? <Fruit>🍎</Fruit> : <Fruit>🍊</Fruit>}</div>
       <Button onClick={() => setIsApple((prev) => !prev)}>Toggle</Button>
     </div>
   );
